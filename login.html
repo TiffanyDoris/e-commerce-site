@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>login</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,124 +13,110 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(226, 239, 195);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      /* Add padding to containers */
-      .container {
-        padding: 16px;
-        background-color: white;
-      }
-
-      /* Full-width input fields */
-      input[type="text"],
-      input[type="password"] {
-        width: 100%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-      }
-
-      input[type="text"]:focus,
-      input[type="password"]:focus {
-        background-color: #ddd;
-        outline: none;
-      }
-
-      /* Overwrite default styles of hr */
-      hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-      }
-
-      /* Set a style for the submit button */
-      .registerbtn {
-        background-color: #04aa6d;
-        color: white;
-        padding: 16px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.9;
-      }
-
-      .registerbtn:hover {
-        opacity: 1;
-      }
-
-      /* Add a blue text color to links */
-      a {
-        color: dodgerblue;
-      }
-
-      /* Set a grey background color and center the text of the "sign in" section */
-      .signin {
-        background-color: #f1f1f1;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="index.html">Dashboard</a>
-        <a href="login.html">login</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="register.html">Register</a>
-        <a href="products.html">Products</a>
+      <nav class="">
+        <ul class="nav-links">
+          <li class="pt-1">
+            <a href="index.html">
+              <img class="d-block mx-auto mb-1" src="images/star logo.png" alt="" width="90" height="90" />
+            </a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li class="center"><a href="login.html">login</a></li>
+          <li class="upward"><a href="checkout.html">Checkout</a></li>
+          <li class="forward"><a href="register.html">Register</a></li>
+          <li class="forward"><a href="products.html">Products</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <form action="index.html">
+    <main class="pb-5" id="contentContainer">
+      <form action="index.html" id="formContainer">
         <div class="container">
           <h1>Login</h1>
-          <p>Please fill out this form login.</p>
+          <p>Please fill in this form to login.</p>
           <hr />
 
           <label for="username"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="username" id="username" required />
+          <input type="text" placeholder="Enter Username" name="Username" id="Username" required />
 
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" id="psw" required />
 
+          <!-- radio buttons -->
           <div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="remember me" id="remember me" value="Friend" />
-              <label class="form-check-label" for="remember me">remember me</label>
+              <input class="form-check-input" type="checkbox" name="remember" id="remember" value="remember" />
+              <label class="form-check-label" for="remember">Remember Me</label>
             </div>
           </div>
 
           <hr />
           <p>By logging in you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-          <button type="submit" class="registerbtn">Login</button>
+          <button type="submit" class="registerbtn">Log In</button>
         </div>
 
         <div class="container signin">
-          <p>Need to create an account? <a href="#">Sign Up!</a>.</p>
+          <p>To create an account <a href="registrartion.html">Create account</a>.</p>
         </div>
       </form>
     </main>
 
-    <footer class="bg-dark text-white p-3">
-      <p>created by tiffon</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid culpa expedita ad laboriosam soluta? Cumque
-        iusto perspiciatis officia.
-      </p>
-      <p>terms/services</p>
+    <footer>
+      <div class="row">
+        <div class="col-6 col-md-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1">
+          <form>
+            <h5>Subscribe doll</h5>
+            <p>Monthly newsletter to catch up with the girlz.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between border-top pt-4">
+        <p>© TEiZMAN BEAUTY. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <!-- Bootstrap JavaScript Libraries -->

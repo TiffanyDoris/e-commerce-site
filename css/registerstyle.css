@@ -1,6 +1,3 @@
-
-
-
 /* Add padding to containers
 .container {
   padding: 16px;
@@ -48,7 +45,7 @@ hr {
 
 /* Add a blue text color to links */
 a {
-  color: #c402ff;
+  color: #065212;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
@@ -56,4 +53,3 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
-
